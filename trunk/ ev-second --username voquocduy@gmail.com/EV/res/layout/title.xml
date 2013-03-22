@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<FrameLayout android:id="@+id/FrameLayout02"
+		android:background="@drawable/title_bkgnd" android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_centerHorizontal="true"
+			android:layout_marginTop="415px">
+
+			<ImageButton android:layout_width="210dip"
+				android:layout_height="40dip" android:id="@+id/id_btn_sns_login"
+				android:background="@drawable/btn_sns_login" android:layout_gravity="center_horizontal"></ImageButton>
+
+			<ImageButton android:layout_width="210dip"
+				android:layout_height="40dip" android:id="@+id/id_btn_guest_login"
+				android:background="@drawable/btn_guest_login"
+				android:layout_gravity="center_horizontal" android:layout_marginTop="10px"></ImageButton>
+
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

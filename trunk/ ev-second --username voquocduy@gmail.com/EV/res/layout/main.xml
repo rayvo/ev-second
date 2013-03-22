@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<FrameLayout android:id="@+id/FrameLayout02"
+		android:background="@drawable/main_bkgnd" android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<!--상단 타이틀 바 -->
+			<FrameLayout android:id="@+id/FrameLayout03"
+				android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height"
+				android:background="@drawable/main_title">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:gravity="center_horizontal"
+					android:layout_centerHorizontal="true" android:layout_gravity="center_horizontal|center_vertical"
+					android:layout_centerVertical="true" android:text="전비왕랭킹"					
+					android:textColor="#003333" android:textSize="20px"
+					android:textStyle="bold" />
+				<!--하단 공용 메뉴 바: 메뉴버튼 목록 -->
+				<RelativeLayout android:id="@+id/RelativeLayout02"
+					android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical">
+
+					<LinearLayout android:id="@+id/LinearLayout02"
+						android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_centerVertical="true" android:layout_marginLeft="10dip">
+						<ImageButton android:layout_width="34dip"
+							android:layout_height="27dip" android:id="@+id/id_btn_back"
+							android:background="@drawable/btn_back" android:layout_gravity="center_vertical"></ImageButton>
+					</LinearLayout>
+
+					<LinearLayout android:id="@+id/LinearLayout03" 
+						android:layout_alignParentRight="true" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_centerVertical="true" android:layout_marginRight="10dip">
+						<ImageButton android:layout_width="34dip"
+							android:layout_height="27dip" android:id="@+id/id_btn_config"
+							android:background="@drawable/btn_config"
+							android:layout_gravity="center_vertical"></ImageButton>
+					</LinearLayout>
+				</RelativeLayout>
+			</FrameLayout>
+
+		</LinearLayout>
+
+		<ImageButton android:layout_width="150dip"
+			android:layout_marginTop="400px" android:layout_height="50dip"
+			android:id="@+id/id_btn_start" android:background="@drawable/btn_start"
+			android:layout_gravity="center_horizontal"></ImageButton>
+
+	</FrameLayout>
+</LinearLayout>
