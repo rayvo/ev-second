@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.cewit.ev"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        
+        
+        <activity android:name="LoadingOneActivity"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".LoadingTwoActivity"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.CALL" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".TitleActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".LoginOneActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".DrivingActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ResultActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".AvatarActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".ConfigActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="MainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+    </application>
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>
