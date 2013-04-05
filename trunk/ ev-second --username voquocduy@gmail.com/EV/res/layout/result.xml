@@ -14,10 +14,9 @@
 				android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height"
 				android:background="@drawable/main_title">
 				<TextView android:layout_width="wrap_content"
-					android:layout_height="wrap_content" 
-					android:gravity="center_horizontal"
+					android:layout_height="wrap_content" android:gravity="center_horizontal"
 					android:layout_centerHorizontal="true" android:layout_gravity="center_horizontal|center_vertical"
-					android:layout_centerVertical="true" android:text="주행요약"					
+					android:layout_centerVertical="true" android:text="주행요약"
 					android:textColor="#003333" android:textSize="20px"
 					android:textStyle="bold" />
 				<!--하단 공용 메뉴 바: 메뉴버튼 목록 -->
@@ -34,8 +33,99 @@
 					</LinearLayout>
 				</RelativeLayout>
 			</FrameLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:background="@color/color_black" android:layout_gravity="center_vertical"
+				android:layout_height="fill_parent" android:orientation="vertical">
 
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="#F8F8F8"
+					android:orientation="vertical">
+
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_marginLeft="10px"
+						android:text="주행경로" android:textColor="#D80000" android:textSize="20px"
+						android:textStyle="bold" />
+
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="vertical">
+						<com.google.android.maps.MapView
+							android:layout_width="fill_parent" android:layout_height="218px"
+							android:enabled="true" android:clickable="true"
+							android:apiKey="0-yXa96XnxfdcoYQIMRl2g6Knm2NbXQDJI8Hkrw" />
+					</LinearLayout>
+
+				</LinearLayout>
+				<FrameLayout android:layout_width="fill_parent"
+					android:layout_height="60px" android:background="#F8F8F8"
+					android:layout_marginTop="0.5px" android:orientation="horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+						android:layout_marginLeft="10px" android:layout_centerVertical="true"
+						android:text="획득전비포인트" android:textColor="#D80000"
+						android:textSize="20px" android:textStyle="bold" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="right|center_vertical"
+						android:layout_marginRight="50px" android:layout_centerVertical="true"
+						android:text="072" android:textColor="#D80000" android:textSize="40px"
+						android:textStyle="bold" />
+					<ImageView android:layout_width="25px"
+						android:layout_height="40px" android:layout_marginRight="10px"
+						android:layout_gravity="right|center_vertical" android:background="@drawable/lighting"></ImageView>
+				</FrameLayout>
+				<FrameLayout android:layout_width="fill_parent"
+					android:layout_height="60px" android:background="#F8F8F8"
+					android:layout_marginTop="1px" android:orientation="horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+						android:layout_marginLeft="10px" android:layout_centerVertical="true"
+						android:text="주행거리" android:textColor="#D80000" android:textSize="20px"
+						android:textStyle="bold" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="right|center_vertical"
+						android:layout_marginRight="50px" android:layout_centerVertical="true"
+						android:text="20" android:textColor="#D80000" android:textSize="40px"
+						android:textStyle="bold" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="right|center_vertical"
+						android:layout_marginRight="10px" android:layout_centerVertical="true"
+						android:text="km" android:textColor="#D80000" android:textSize="25px"
+						android:textStyle="bold" />
+				</FrameLayout>
+				<FrameLayout android:layout_width="fill_parent"
+					android:layout_height="60px" android:background="#F8F8F8"
+					android:layout_marginTop="0.5px" android:orientation="horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+						android:layout_marginLeft="10px" android:layout_centerVertical="true"
+						android:text="주행시간" android:textColor="#D80000" android:textSize="20px"
+						android:textStyle="bold" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="right|center_vertical"
+						android:layout_marginRight="10px" android:layout_centerVertical="true"
+						android:text="05:37:58" android:textColor="#D80000"
+						android:textSize="40px" android:textStyle="bold" />
+
+				</FrameLayout>
+				<FrameLayout android:layout_width="fill_parent"
+					android:layout_height="60px" android:background="#F8F8F8"
+					android:layout_marginTop="1px" android:orientation="horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+						android:layout_marginLeft="10px" android:layout_centerVertical="true"
+						android:text="구간평균전비" android:textColor="#D80000"
+						android:textSize="20px" android:textStyle="bold" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="right|center_vertical"
+						android:layout_marginRight="50px" android:layout_centerVertical="true"
+						android:text="037" android:textColor="#D80000" android:textSize="40px"
+						android:textStyle="bold" />
+					<ImageView android:layout_width="25px"
+						android:layout_height="40px" android:layout_marginRight="10px"
+						android:layout_gravity="right|center_vertical" android:background="@drawable/lighting"></ImageView>
+				</FrameLayout>
+			</LinearLayout>
 		</LinearLayout>
+
 
 	</FrameLayout>
 </LinearLayout>
